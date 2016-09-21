@@ -1,31 +1,41 @@
 
+<!-- how to pull in a google font -->
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- style element holds the css in the same doc. -->
+<!-- for CSS would normally use an external sheet -->
 <style>
+/* Class selector setting a color, which changes the font color */
   .red-text {
     color: red;
   }
 
+/* h2 selector setting a font, and default if the specified font isn't present */
   h2 {
     font-family: Lobster, Monospace;
   }
 
+/* p selector setting font size in pixels and a default font */
   p {
     font-size: 16px;
     font-family: Monospace;
   }
 
+/* class selector seeting border traits including color, width, style and corner radius. */
   .thick-green-border {
-    border-color: green;
+    border-color: cornflowerblue;
     border-width: 10px;
     border-style: solid;
-    border-radius: 50%;
+    border-radius: 40%;
   }
 
+/* class selector setting an image width */
   .smaller-image {
     width: 100px;
   }
 </style>
 
+<!-- h2 element with a class property -->
 <h2 class="red-text">CatPhotoApp</h2>
 
 <p>Click here for <a href="#">cat photos</a>.</p>
