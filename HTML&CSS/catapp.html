@@ -24,13 +24,21 @@
     font-size: 16px;
     font-family: Monospace;
   }
+  label, #button, #input {
+    padding-right: 4px;
+    padding-left: 4px;
+    border-color: slateblue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10%;
+  }
 
 /* class selector seeting border traits including color, width, style and corner radius. */
   .thick-green-border {
     border-color: cornflowerblue;
     border-width: 10px;
     border-style: solid;
-    border-radius: 40%;
+    border-radius: 35%;
   }
 
 /* class selector setting an image width */
@@ -71,10 +79,10 @@
   <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
   <!-- input element with type and placeholder property -->
   <!-- text input -->
-  <input type="text" placeholder="cat photo URL" required>
+  <input type="text" placeholder="cat photo URL" required id="input">
   <!-- button element with type property -->
   <!-- submit type -->
-  <button type="submit">Submit</button>
+  <button type="submit" id="button">Submit</button>
   <!-- end of form -->
 </form>
 </body>
