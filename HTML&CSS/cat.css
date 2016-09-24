@@ -1,9 +1,10 @@
 body {
-    backgound-color:  black;
+    background-color:  black;
     color:  slateblue;
+  }
   
   .red-text {
-    colorred;
+    color: red;
   }
 
 /* h2 selector setting a font, and default if the specified font isn't present */

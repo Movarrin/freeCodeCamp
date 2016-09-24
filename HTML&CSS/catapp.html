@@ -1,89 +1,45 @@
-
 <!-- how to pull in a google font -->
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="cat.css">
 <!-- style element holds the css in the same doc. -->
 <!-- for CSS would normally use an external sheet -->
-<style>
-/* Class selector setting a color, which changes the font color */
-  body {
-    background-color:  black;
-    color:  slateblue;
-  }
-  .red-text {
-    color: red;
-  }
-
-/* h2 selector setting a font, and default if the specified font isn't present */
-  h2 {
-    font-family: Lobster, Monospace;
-  }
-
-/* p selector setting font size in pixels and a default font */
-  p {
-    font-size: 16px;
-    font-family: Monospace;
-  }
-  label, #button, #input {
-    padding-right: 4px;
-    padding-left: 4px;
-    border-color: slateblue;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 1%;
-  }
-
-/* class selector seeting border traits including color, width, style and corner radius. */
-  .thick-green-border {
-    border-color: cornflowerblue;
-    border-width: 12px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
-/* class selector setting an image width */
-  .smaller-image {
-    width: 150px;
-  }
-</style>
 <body>
-<!-- h2 element with a class property -->
-<h2 class="red-text">CatPhotoApp</h2>
-
-<!-- p element with an unspecified hyperlink and text in an anchor tag -->
-<p>Click here for <a href="#">cat photos</a>.</p>
-
-<!-- An image as link and alt text for screen readers -->
-<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat"></a>
-<div>
-<!-- p elements, Unordered list -->
-<p>Things cats love:</p>
-<ul>
-  <li>cat nip</li>
-  <li>laser pointers</li>
-  <li>lasagna</li>
-</ul>
-<!-- p element and then an ordered or numbered list. -->
-<p>Top 3 things cats hate:</p>
-<ol>
-  <li>flea treatment</li>
-  <li>thunder</li>
-  <li>dogs</li>
-  <li>other cats</li>
-</ol>
-<!-- form element with an action property -->
-<form action="/submit-cat-photo">
-<!-- label element surrounding an input element with type, and name properties -->
-<!-- radio buttons -->
-  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  <!-- input element with type and placeholder property -->
-  <!-- text input -->
-  <input type="text" placeholder="cat photo URL" required id="input">
-  <!-- button element with type property -->
-  <!-- submit type -->
-  <button type="submit" id="button">Submit</button>
-  <!-- end of form -->
-</form>
-</div>
+  <!-- h2 element with a class property -->
+  <h2 class="red-text">CatPhotoApp</h2>
+  <!-- p element with an unspecified hyperlink and text in an anchor tag -->
+  <p>Click here for <a href="#">cat photos</a>.</p>
+  <!-- An image as link and alt text for screen readers -->
+  <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat"></a>
+  <div>
+    <!-- p elements, Unordered list -->
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <!-- p element and then an ordered or numbered list. -->
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>dogs</li>
+      <li>other cats</li>
+    </ol>
+    <!-- form element with an action property -->
+    <form action="/submit-cat-photo">
+      <!-- label element surrounding an input element with type, and name properties -->
+      <!-- radio buttons -->
+      <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      <!-- input element with type and placeholder property -->
+      <!-- text input -->
+      <input type="text" placeholder="cat photo URL" required id="input">
+      <!-- button element with type property -->
+      <!-- submit type -->
+      <button type="submit" id="button">Submit</button>
+      <!-- end of form -->
+    </form>
+  </div>
 </body>
