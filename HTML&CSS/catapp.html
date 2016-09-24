@@ -1,20 +1,40 @@
-<!-- how to pull in a google font -->
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="cat.css">
+<!doctype html>
+<!-- above specifies html5 document -->
+<!-- beginning of the head put links and scripts here -->
+<<head>
+  <meta charset="utf-8">
+  <!-- element that supplies the title bar text -->
+  <title>My Cat App</title>
+  <!-- how to pull in a google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <!-- how to pull in Bootstrap -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- how to link to an external css file in same folder -->
+  <link rel="stylesheet" type="text/css" href="cat.css">
+</head>
 <!-- style element holds the css in the same doc. -->
 <!-- for CSS would normally use an external sheet -->
 <body>
-  <!-- h2 element with a class property -->
-  <h2 class="red-text">CatPhotoApp</h2>
-  <!-- p element with an unspecified hyperlink and text in an anchor tag -->
-  <p>Click here for <a href="#">cat photos</a>.</p>
-  <!-- An image as link and alt text for screen readers -->
-  <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat"></a>
-  <div>
-    <!-- p elements, Unordered list -->
+  <!-- flexible bootstrap responsive container -->
+  <div class="container-fluid">
+    <!-- h2 element with a class property -->
+    <h2 class="red-text">CatPhotoApp</h2>
+    <!-- p element with an unspecified hyperlink and text in an anchor tag -->
+    <p>Click here for <a href="#">cat photos</a>.</p>
+    <!-- An image as link and alt text for screen readers -->
+    <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat"></a>
+    <br>
+    
+    <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
+    <!-- specify bootstrap button, block button and primary button color -->
+    <button class="btn btn-block btn-primary">Like</button>
+    <!-- info button color instead of primary color -->
+    <button class="btn btn-block btn-info">Info</button>
+    <!-- p elements-->
     <p>Things cats love:</p>
+    <!-- unordered list -->
     <ul>
+      <!-- list item -->
       <li>cat nip</li>
       <li>laser pointers</li>
       <li>lasagna</li>
@@ -38,7 +58,7 @@
       <input type="text" placeholder="cat photo URL" required id="input">
       <!-- button element with type property -->
       <!-- submit type -->
-      <button type="submit" id="button">Submit</button>
+      <button type="submit" id="button" class="btn btn-block button-primary">Submit</button>
       <!-- end of form -->
     </form>
   </div>
