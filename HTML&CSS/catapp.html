@@ -23,13 +23,27 @@
     <p>Click here for <a href="#">cat photos</a>.</p>
     <!-- An image as link and alt text for screen readers -->
     <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat"></a>
-    <br>
-    
+    <!-- image with a responsive class. will dynamically resize image -->
     <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
-    <!-- specify bootstrap button, block button and primary button color -->
-    <button class="btn btn-block btn-primary">Like</button>
-    <!-- info button color instead of primary color -->
-    <button class="btn btn-block btn-info">Info</button>
+    
+    <!-- create a responsive row div -->
+    <div class="row">
+      <!-- create responsive column in the row -->
+      <div class="col-xs-4">
+        <!-- specify bootstrap button, block button and primary button color -->
+        <button class="btn btn-block btn-primary">Like</button>
+      </div>
+      <!-- specify bootstrap button, block button and primary button color -->
+      <div class="col-xs-4">
+        <!-- info button color instead of primary color -->
+        <button class="btn btn-block btn-info">Info</button>
+      </div>
+      <!-- Danger button -->
+      <div class="col-xs-4">
+        <!-- specify bootstrap button, block button and primary button color -->
+        <button class="btn btn-block btn-danger">Delete</button>
+      </div>
+    </div>
     <!-- p elements-->
     <p>Things cats love:</p>
     <!-- unordered list -->
