@@ -1,0 +1,27 @@
+/* body {
+    background-color:  black;
+    color:  slateblue;
+  }
+ */
+
+/* h2 selector setting a font, and default if the specified font isn't present */
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+/*   label, #button, #input {
+    padding-right: 4px;
+    padding-left: 4px;
+    border-color: slateblue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1%;
+  } */
+
+/* class selector seeting border traits including color, width, style and corner radius. */
+  .thick-green-border {
+    border-color: cornflowerblue;
+    border-width: 12px;
+    border-style: solid;
+    border-radius: 50%;
+  }
