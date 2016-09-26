@@ -9,11 +9,18 @@
   // examples of animations set by jQuery by adding and removing classes
   $("button").addClass("animated bounce");
   // $("#target1").css("color", "blue");
+  setTimeout(function() {
+  // $("#target2").prop("disabled", "False");
+  $("#target2").addClass(" fadeIn");
+  $("#target2").addClass("btn-primary").removeClass("btn-default");
+  // $("#target2").prop("enabled", "true");
+  
+  }, 5100);
   // $(".well").addClass("animated slideOutUp");
   // $("#right-well").addClass("animated fadeOut");
   $("#target1").addClass("btn-primary");
   $("#target1").removeClass("btn-default");
-  $("#target2").prop("disabled", "true");
+  // $("#target2").prop("disabled", "true");
   });
   </script>
   <!-- how to pull in Bootstrap -->
