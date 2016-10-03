@@ -7,7 +7,7 @@
   <script>
   $(document).ready(function() {
   // examples of animations set by jQuery by adding and removing classes
-  $("button").addClass("animated bounce");
+  // $("button").addClass("animated bounce");
   // $("#target1").css("color", "blue");
   setTimeout(function() {
   // $("#target2").prop("disabled", "False");
@@ -30,7 +30,11 @@
 
   // target the children of an HTML element
   $("#right-well").children().css("color", "blue");
+
   $("#left-well").children().css("color", "magenta");
+
+  //target a specific child of an HTML element using .target:nth-child(n)
+  $(".target:nth-child(3)").addClass("animated bounce");
 
   //grab the button with an id of target6 and show the html
   // alert($("button").html());
