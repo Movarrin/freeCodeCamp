@@ -22,6 +22,13 @@
   // $("#right-well").addClass("animated fadeOut");
   $("#target1").addClass("btn-primary");
   $("#target1").removeClass("btn-default");
+
+  // target modify the parent of an html element
+  $("#target1").parent().css("background-color", "red");
+
+  // target the children of an HTML element
+  $("#right-well").children().css("color", "blue");
+
   //grab the button with an id of target6 and show the html
   // alert($("button").html());
   // $("button").text("<em>text</em>")
