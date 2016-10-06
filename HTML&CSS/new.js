@@ -7,13 +7,13 @@ var a = function (d) {
 
 (a(8));
 
-function fiver(eatShit) {}
+function fiver(eatSalad) {
 
     'use strict';
-    return (eatShit)
+    return (eatSalad)
     // body...
 }
-fiv er("teats")
+fiv er("treats")
 
 
 
