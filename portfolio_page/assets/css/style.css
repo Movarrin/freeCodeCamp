@@ -1,26 +1,31 @@
-        body {
-            /* background-color: #000; */
-            overflow-x: hidden;
-        }
-        
-        header {
-            background-image: url("./assets/images/platform.jpg");
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-position: center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
-            text-align: center;
-            color: white;
-        }
-        
-        header .intro-text {
-            padding-top: 150px;
-            padding-bottom: 150px;
-        }
-        
-        .img-centered {
-            margin: 0 auto;
-        }
+    header {
+        background-image: url("./assets/images/platform.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        /* safari & chrome */
+        -webkit-background-size: cover;
+        /* mozilla */
+        -moz-background-size: cover;
+        background-size: cover;
+        /* opera */
+        -o-background-size: cover;
+        text-align: center;
+        color: white;
+    }
+    
+    header .intro-text {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /* format text colors to match picture */
+    /* pad to encapsulate text */
+    
+    #intro-quote,
+    #intro-author {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+        background-color: #2C2C2C;
+        display: inline-block;
+    }

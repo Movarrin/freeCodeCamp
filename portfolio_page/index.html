@@ -20,10 +20,9 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
-    /*     body {
-        background-color: #000;
-        overflow-x: hidden;
-    } */
+    .navbar {
+        margin-bottom: 0px;
+    }
     
     header {
         background-image: url("./assets/images/platform.jpg");
@@ -38,6 +37,7 @@
         -o-background-size: cover;
         text-align: center;
         color: white;
+        margin-top: 0px;
     }
     
     header .intro-text {
@@ -45,32 +45,43 @@
         padding-bottom: 150px;
     }
     /* format text colors to match picture */
-    /* round corners and pad to encapsulate text */
-    #intro-span {
-        background-color: #2C2C2C;
-        /* border-radius: 50px; */
-        padding-left: 5px;
-        padding-right: 5px;
-        color: #BDBDBD;
-    }
+    /* pad to encapsulate text */
     
-    .img-centered {
-        margin: 0 auto;
+    #intro-quote,
+    #intro-author {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+        background-color: #2C2C2C;
+        display: inline-block;
     }
     </style>
-    <title></title>
+    <title>Andrew J Dittman</title>
 </head>
 
-<body id="page-top">
-    <header>
-        <div class="container-fluid" id="container1">
-            <div class="intro-text">
-                <div class="intro-leadin"><span id="intro-span">“In theory, theory and practice are the same. In practice, they are not.” ― Albert Einstein</span>
-                </div>
+</html>
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            
             </div>
-            <!-- <img src="./assets/images/platform.jpg" alt="brand" class="img-responsive img-centered center-block" id="page-header"> -->
+        </div>
+    </nav>
+    <!-- page header -->
+    <header>
+        <div class="container-fluid intro-text">
+            <div class="intro-leadin">
+                <span id="intro-quote" class="text-center text-primary">“In theory, theory and practice are the same. In practice, they are not.”
+                </span>
+                <br>
+                <span class="text-center text-primary" id="intro-author">
+                    ― Albert Einstein
+                </span>
+            </div>
         </div>
     </header>
 </body>
-
-</html>
