@@ -1,0 +1,26 @@
+        body {
+            /* background-color: #000; */
+            overflow-x: hidden;
+        }
+        
+        header {
+            background-image: url("./assets/images/platform.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            text-align: center;
+            color: white;
+        }
+        
+        header .intro-text {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        
+        .img-centered {
+            margin: 0 auto;
+        }
