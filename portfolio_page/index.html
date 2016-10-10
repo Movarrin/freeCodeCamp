@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- include bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- how to link to an external css file in same folder -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <!-- how to add animate.css from a CSN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery must be loaded before bootstrap.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- include bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- how to link to an external css file in same folder -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- how to add animate.css from a CSN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- CSS Below -->
     <!-- CSS Below -->
     <style type="text/css">
@@ -62,6 +69,14 @@
     #ajddone {
         text-decoration: underline;
     }
+    
+    .color-nav {
+        background-color: #000;
+    }
+    
+    #myNavbar {
+        color: #000;
+    }
     </style>
     <!-- CSS above -->
     <!-- CSS above -->
@@ -71,25 +86,29 @@
 </html>
 
 <body id="page-top">
-    <!-- top navigation bar -->
+    <!-- collapsable navbar -->
     <nav class="navbar navbar-inverse">
-        <!-- fuild container -->
-        <div class="container-fluid">
-            <!-- brand containers -->
+        <div class="container-fluid color-nav">
             <div class="navbar-header">
-                <!-- link to brand -->
-                <a class="navbar-brand" href="http://www.ajddone.com/" target="blank" id="ajddone">Andrew J Dittman</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.ajddone.com/" target="blank">Andrew J Dittman</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#page-top">Home</a></li>
-                <li class="active"><a href="#about-me">Me</a></li>
-                <li class="active"><a href="#portfolio-projects">Highlights</a></li>
-                <li class="active"><a href="https://github.com/Movarrin" target="blank">Github</a></li>
-                <li class="active"><a href="http://codepen.io/Movarrin/#" target="blank">CodePen</a></li>
-                <li class="active"><a href="https://www.linkedin.com/in/andrewjdittman" target="blank">LinkedIn</a></li>
-            </ul>
+            <div class="collapse  navbar-right navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav small">
+                    <li class="active"><a href="#"><span><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</span></a></li>
+                    <li class="active"><a href="#portfolio-projects"><span><i class="fa fa-lg fa-suitcase" aria-hidden="true"></i> Portfoliob</span></a></li>
+                    <li class="active"><a href="https://github.com/Movarrin" target="blank"><span><i class="fa fa-lg fa-github" aria-hidden="true"></i> GitHub</span></a></li>
+                    <li class="active"><a href="http://codepen.io/Movarrin/#" target="blank"><span><i class="fa fa-lg fa-codepen" aria-hidden="true"></i> CODEPEN</span></a></li>
+                    <li class="active"><a href="https://www.linkedin.com/in/andrewjdittman" target="blank"><span><i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i> LinkedIn</span></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <!-- collapsable navbar -->
     <!-- page header -->
     <header>
         <div class="container-fluid intro-text">

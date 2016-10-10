@@ -1,94 +1,96 @@
 <!doctype html>
-</<head>
-  <!-- how to add jQuery if you are hosting it yourself -->
-  <!-- <script src="jquery-1.12.4.min.js"></script> -->
-  <!-- how to add jQuery if you using a CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-  // examples of animations set by jQuery by adding and removing classes
-  // $("button").addClass("animated bounce");
-  // $("#target1").css("color", "blue");
-  setTimeout(function() {
-  // $("#target2").prop("disabled", "False");
-  $("#target2").addClass(" fadeIn");
-  $("#target2").addClass("btn-primary").removeClass("btn-default");
-  // $("#target4").html("<em>#target4</em>");
-  // $("#target2").prop("enabled", "true");
-  $("#target5").clone().appendTo("#left-well");
-  
-  }, 5100);
-  // $(".well").addClass("animated slideOutUp");
-    // $("#right-well").addClass("animated fadeOut");
-  $("#target1").addClass("btn-primary");
-  
-  // remove a class with jQuery
-  $("#target1").removeClass("btn-default");
 
-  // target modify the parent of an html element
-  $("#target1").parent().css("background-color", "red");
+<head>
+    <!-- how to add jQuery if you are hosting it yourself -->
+    <!-- <script src="jquery-1.12.4.min.js"></script> -->
+    <!-- how to add jQuery if you using a CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // examples of animations set by jQuery by adding and removing classes
+        // $("button").addClass("animated bounce");
+        // $("#target1").css("color", "blue");
+        setTimeout(function() {
+            // $("#target2").prop("disabled", "False");
+            $("#target2").addClass(" fadeIn");
+            $("#target2").addClass("btn-primary").removeClass("btn-default");
+            // $("#target4").html("<em>#target4</em>");
+            // $("#target2").prop("enabled", "true");
+            $("#target5").clone().appendTo("#left-well");
 
-  // target the children of an HTML element
-  $("#right-well").children().css("color", "blue");
+        }, 5100);
+        // $(".well").addClass("animated slideOutUp");
+        // $("#right-well").addClass("animated fadeOut");
+        $("#target1").addClass("btn-primary");
 
-  $("#left-well").children().css("color", "magenta");
+        // remove a class with jQuery
+        $("#target1").removeClass("btn-default");
 
-  //target a specific child of an HTML element using .target:nth-child(n)
-  $(".target:nth-child(3)").addClass("animated bounce");
+        // target modify the parent of an html element
+        $("#target1").parent().css("background-color", "red");
 
-  //target odd children of an element
-  $(".target:odd").addClass("animated rubberBand");
-  //target even children of an element
-  $(".target:even").addClass("animated pulse");
+        // target the children of an HTML element
+        $("#right-well").children().css("color", "blue");
 
-  // use jQuery to make the entire body disappear
-  // $("body").addClass("animated hinge");
+        $("#left-well").children().css("color", "magenta");
 
-  //grab the button with an id of target6 and show the html
-  // alert($("button").html());
-  // $("button").text("<em>text</em>")
-  // $("button").html("<em>text</em>")
-  // $("button").html("text")
-  // $("#target2").prop("disabled", "true");
-  // This will overlay the three buttons made below with a new button.
-  // $("div#left-well").html("<button type='submit' class='btn' id='t7'>#t7</button>")
-  // $("div#left-well").html("<button type='submit' class='btn btn-default target' id='target7'>#target7</button>")
-  // This will append a new button after the three buttons made below.
-  // $("div#left-well").append("<button type='submit' class='btn btn-default target' id='target7'>#target7</button>")
-  });
-  </script>
-  <!-- how to pull in Bootstrap -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- how to add FontAwesome to an app -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  <!-- how to pull in a google font -->
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-  <!-- how to add animate.css from a CSN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <meta charset="utf-8">
-  <title>jQuery Playground</title>
+        //target a specific child of an HTML element using .target:nth-child(n)
+        $(".target:nth-child(3)").addClass("animated bounce");
+
+        //target odd children of an element
+        $(".target:odd").addClass("animated rubberBand");
+        //target even children of an element
+        $(".target:even").addClass("animated pulse");
+
+        // use jQuery to make the entire body disappear
+        // $("body").addClass("animated hinge");
+
+        //grab the button with an id of target6 and show the html
+        // alert($("button").html());
+        // $("button").text("<em>text</em>")
+        // $("button").html("<em>text</em>")
+        // $("button").html("text")
+        // $("#target2").prop("disabled", "true");
+        // This will overlay the three buttons made below with a new button.
+        // $("div#left-well").html("<button type='submit' class='btn' id='t7'>#t7</button>")
+        // $("div#left-well").html("<button type='submit' class='btn btn-default target' id='target7'>#target7</button>")
+        // This will append a new button after the three buttons made below.
+        // $("div#left-well").append("<button type='submit' class='btn btn-default target' id='target7'>#target7</button>")
+    });
+    </script>
+    <!-- how to pull in Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- how to add FontAwesome to an app -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- how to pull in a google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!-- how to add animate.css from a CSN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <meta charset="utf-8">
+    <title>jQuery Playground</title>
 </head>
+
 <body>
-  <!-- only change code above this line. jQuery will modify the rest -->
-  <div class="container-fluid">
-    <h3 class="text-primary text-center">jQuery Playground</h3>
-    <div class="row">
-      <div class="col-xs-6">
-        <h4>#left-well</h4>
-        <div class="well" id="left-well">
-          <button type="submit" class="btn btn-default target" id="target1">#target1</button>
-          <button type="submit" class="btn btn-default target" id="target2">#target2</button>
-          <button type="submit" class="btn btn-default target" id="target3">#target3</button>
+    <!-- only change code above this line. jQuery will modify the rest -->
+    <div class="container-fluid">
+        <h3 class="text-primary text-center">jQuery Playground</h3>
+        <div class="row">
+            <div class="col-xs-6">
+                <h4>#left-well</h4>
+                <div class="well" id="left-well">
+                    <button type="submit" class="btn btn-default target" id="target1">#target1</button>
+                    <button type="submit" class="btn btn-default target" id="target2">#target2</button>
+                    <button type="submit" class="btn btn-default target" id="target3">#target3</button>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <h4>#right-well</h4>
+                <div class="well" id="right-well">
+                    <button type="submit" class="btn btn-default target" id="target4">#target4</button>
+                    <button type="submit" class="btn btn-default target" id="target5">#target5</button>
+                    <button type="submit" class="btn btn-default target" id="target6">#target6</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-xs-6">
-        <h4>#right-well</h4>
-        <div class="well" id="right-well">
-          <button type="submit" class="btn btn-default target" id="target4">#target4</button>
-          <button type="submit" class="btn btn-default target" id="target5">#target5</button>
-          <button type="submit" class="btn btn-default target" id="target6">#target6</button>
-        </div>
-      </div>
     </div>
-  </div>
 </body>
