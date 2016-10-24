@@ -66,6 +66,7 @@
         /* background-color: #2C2C2C; */
         display: inline-block;
         color: #9D9D9D;
+        font-size: 1.3em;
     }
     /* underline link to ajddone */
     
@@ -96,10 +97,35 @@
     }
     
     #about-me {
-        background-color: #000;
+        background: #000;
+        /* Chrome 10+,Safari */
+        background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* Firefox 4+ */
+        background: -moz-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* Opera */
+        background: -o-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* IE 10+ */
+        background: -ms-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* W3C */
+        background: -linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /*Standard*/
+        color: #9D9D9D;
+    }
+    
+    #section1 {
+        background: #000;
+        /* Chrome 10+,Safari */
+        background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* Firefox 4+ */
+        background: -moz-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* Opera */
+        background: -o-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* IE 10+ */
+        background: -ms-linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
+        /* W3C */
+        background: -linear-gradient(bottom, rgb(0, 0, 0) 10%, rgb(153, 150, 153) 57%, rgb(0, 0, 0) 90%);
     }
     </style>
-    <!-- CSS above -->
     <!-- CSS above -->
     <title>Andrew J Dittman</title>
 </head>
@@ -137,7 +163,7 @@
     <!-- collapsable navbar -->
     <!-- page header image is background-->
     <header>
-        <div class="container-fluid panel-cotent intro-text">
+        <div class="container-fluid panel-content intro-text">
             <div class="intro-leadin">
                 <span id="intro-quote" class="text-center text-primary">“In theory, theory and practice are the same. In practice, they are not.”
                 </span>
@@ -149,11 +175,12 @@
         </div>
     </header>
     <!-- about section -->
-    <section id="about-me" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Andrew J Dittman</h2>
-            </div>
+    <section class="content-section" id="section1">
+        <div class="container-fluid panel-content intro-text text-center" id="about-me">
+            <p class="h2">Perspective</p>
+            <p class="h3">Everyone has their own.</p>
+            <p class="h3">Each is different.</p>
+            <p class="h3">You can only know your own.</p>
         </div>
     </section>
 </body>
