@@ -1,40 +1,68 @@
-    .navbar {
-        margin-bottom: 0px;
-    }
-    
-    header {
-        background-image: url("./assets/images/platform.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        /* safari & chrome */
-        -webkit-background-size: cover;
-        /* mozilla */
-        -moz-background-size: cover;
-        background-size: cover;
-        /* opera */
-        -o-background-size: cover;
-        text-align: center;
-        color: white;
-        margin-top: 0px;
-    }
-    
-    header .intro-text {
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
-    /* format text colors to match picture */
-    /* pad to encapsulate text */
-    
-    #intro-quote,
-    #intro-author {
-        padding-left: 2px;
-        padding-right: 2px;
-        padding-bottom: 4px;
-        margin-bottom: 0px;
-        background-color: #2C2C2C;
-        display: inline-block;
-    }
-    
-    #ajddone {
-        text-decoration: underline;
-    }
+.navbar {
+    margin-bottom: 0px;
+}
+
+header {
+    background-image: url("./assets/images/platform.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* safari & chrome */
+    -webkit-background-size: cover;
+    /* mozilla */
+    -moz-background-size: cover;
+    background-size: cover;
+    /* opera */
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+}
+
+header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* format text colors to match picture */
+/* pad to encapsulate text */
+#intro-quote,
+#intro-author {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+    background-color: #000;
+    /* background-color: #2C2C2C; */
+    display: inline-block;
+    color: #9D9D9D;
+}
+
+
+/* underline link to ajddone */
+
+#ajddone {
+    text-decoration: underline;
+}
+
+
+/* color menu bar */
+
+.color-nav {
+    background-color: #000;
+}
+
+
+/* menubar color to black and push to edge of screen */
+
+#myNavbar {
+    color: #000;
+    margin-right: -30px;
+}
+
+
+/* add menu separator */
+
+#myNavbar ul li {
+    border: 1px solid #2C2C2C;
+    border-radius: 35%;
+}
